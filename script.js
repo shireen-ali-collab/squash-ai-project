@@ -1,0 +1,2 @@
+const grid=document.querySelector("#prototype-grid");
+if(grid && Array.isArray(prototypes)){grid.innerHTML=prototypes.map(x=>`<article class="card"><div class="top"><span>BUILD ${x.number}</span><span class="tag">${x.status}</span></div><h3>${x.title}</h3><p>${x.description}</p><span class="date">${x.date}</span></article>`).join("");}
